@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer",
+  "name": "puppeteer-1",
   "version": "1.0.0",
   "main": "server.js",
   "exports": "./dist/server.mjs",
@@ -22,8 +22,7 @@
     "express": "^5.1.0",
     "mongoose": "^8.9.5",
     "morgan": "^1.10.0",
-    "puppeteer": "^24.8.2",
-    "puppeteer-core": "^24.8.2"
+    "puppeteer": "^24.8.2"
   },
   "devDependencies": {
     "@types/node": "^22.10.7",

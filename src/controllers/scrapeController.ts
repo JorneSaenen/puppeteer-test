@@ -9,11 +9,11 @@ export const scrape = async (req: Request, res: Response) => {
       "--single-process",
       "--no-zygote",
     ],
-    headless: false,
+    headless: true,
     executablePath:
       process.env.NODE_ENV === "production"
         ? process.env.PUPPETEER_EXECUTABLE_PATH
-        : puppeteer.executablePath(),
+        : "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
   });
   const page = await browser.newPage();
   await page.setDefaultNavigationTimeout(0);
